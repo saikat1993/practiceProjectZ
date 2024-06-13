@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: 'Hosted Agent'
+pool: 'Azure Pipelines'
 
 variables:
   solution: '**/*.sln'
