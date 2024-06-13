@@ -6,7 +6,10 @@
 trigger:
 - main
 
-pool: 'Azure Pipelines'
+pool:
+  name: Azure Pipelines
+  demands:
+   - agent.name -equals 'Hosted Agent'
 
 variables:
   solution: '**/*.sln'
