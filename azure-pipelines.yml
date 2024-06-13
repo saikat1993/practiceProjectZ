@@ -23,6 +23,10 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: MSBuild@1
+  inputs:
+    solution: '**/*.sln'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
